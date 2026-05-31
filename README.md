@@ -291,14 +291,7 @@ Best recorded `lstm_v3` (see `models/lstm_v3/info.txt`): ~**91.5%** train accura
 
 ---
 
-## Limitations & Future Work
 
-- **Isolated signs only** — no continuous sentence translation or grammar  
-- **Closed vocabulary** — only trained classes; others should map to “unknown” via threshold  
-- **Signer speed variance** — fixed 30-frame window may clip slow/fast signers; improvements: adaptive windows, consecutive-confidence counters, gesture boundary detection  
-- **Two-hand relational features** — relative distance/angle between hands not yet engineered (good extension story)  
-- **Face landmarks** — skipped for lightweight inference; useful for questions vs statements in full SLU  
-- **Production** — consider TFLite/ONNX, edge deployment, and larger diverse datasets  
 
 ---
 
@@ -308,4 +301,4 @@ Best recorded `lstm_v3` (see `models/lstm_v3/info.txt`): ~**91.5%** train accura
 - [TensorFlow LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM)  
 - Indian Sign Language research datasets (limited availability motivates isolated-gesture focus)  
 
-For a full list of likely interview questions and suggested answers, see **[interview.md](./interview.md)**.
+
